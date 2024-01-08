@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #01090e;
+}
+
+/* body::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#e91e63,#ffc107);
+    clip-path: circle(12% at 15% 25%);
+
+}
+
+body::after 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffffff,#ffc107);
+    clip-path: circle(10% at 86.5% 60%);
+    
+} */
+
+/* body::backdrop 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffffff,#ffc107);
+    clip-path: circle(10% at 20% 30%);
+    
+} */
+
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 1000px;
+    margin: 30px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    box-shadow: 0 35px 55px rgba(233, 9, 9, 0.1);
+}
+
+.container .left_Side
+{
+    position: relative;
+    background: #1b1b1b;
+    padding: 40px;
+}
+
+.container .right_Side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.profileText .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+
+.myself
+{
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.myself h4
+{
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.contactInfo
+{
+    padding-top: 20px;
+    
+}
+
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul
+{
+    position: relative;
+    
+}
+
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo.education li
+{
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.contactInfo.education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactInfo.education h4
+{
+    color: #fff;
+    font-weight: 300;
+
+}
+
+
+.language
+{
+    padding: 10px;
+}
+
+
+.contactInfo.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+
+}
+
+.contactInfo.language .percent div
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.title2
+{
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.project_name h5
+{
+    margin: 8px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.project_name h4    
+{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+p
+{
+    color: black;
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+.box
+{
+    margin-bottom: 15px;
+}
+
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h5
+{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 8px;
+    border-radius: 20px;
+    background: #f0f0f0;
+}
+
+
+.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4 ;
+}
+
+.interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(7,2fr);
+    margin: 0;
+}
+
+.interest ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 10px;
+
+}
