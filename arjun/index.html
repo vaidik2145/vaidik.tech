@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Skynet</title>
+</head>
+<body>
+    <!-- <div class="login">
+        <button>login</button>
+    </div> -->
+    <header>
+        <div class="logo">
+            <h2>Skynet</h2>
+        </div>
+        <div class="rightSide">
+            <div class="btns dayNight">
+                <ion-icon name="moon"></ion-icon>
+                <ion-icon name="sunny"></ion-icon>
+            </div>
+            <div class="btns menuToggle">
+                <ion-icon name="menu"></ion-icon>
+                <ion-icon name="close-circle"></ion-icon>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <video src="vedio.mp4" autoplay loop muted type="mp4"></video>
+            <h1>Skynet</h1>
+        <p class="copyrightText">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <ul class="sci">
+            <li><a href='https://google.com'><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href='https://github.com/Skynetop'><ion-icon name="logo-github"></ion-icon></a></li>
+        </ul>
+    </section>
+    
+    <!-- sidebar nevigation -->
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">CS and EH</a></li>
+        <li><a href="#">projects</a></li>
+        <li><a href="#">Informations about using items</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="arjun/index.html">My Resume</a></li>
+        <li><a href="smoke/index.html">Smoke Effect</a></li>
+    </ul>
+
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let dayNight = document.querySelector('.dayNight')
+        let menuToggle = document.querySelector('.menuToggle')
+        let body = document.querySelector('body')
+        let navigation = document.querySelector('.navigation')
+
+        dayNight.onclick = function(){
+            body.classList.toggle('dark')
+            dayNight.classList.toggle('active')
+
+        }
+
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+
+
+    </script>
+</body>
+</html>
