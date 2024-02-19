@@ -261,7 +261,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-     text-decoration: none;
+    text-decoration: none;
     font-size: 25px;
     margin-right: 15px;
     color: #ababab;
@@ -286,7 +286,7 @@ nav ul li a:hover::after{
 .social-icons a:hover{
     color: #ff004f;
     transform: translateY(-5px);
-    
+}
 .btn.btn2{
     display: inline-block;
     background: #ff004f;
@@ -299,7 +299,7 @@ form input, form textarea{
     border: 0;
     outline: none;
     background: #262626;
-    padding: 15px 0;
+    padding: 15px;
     margin: 15px 0;
     color: #fff;
     font-size: 18px;
